@@ -17,10 +17,10 @@ The project was created for my SE_19 class at CODE University and is a recipe co
 - **Home (`index.html`)** → Welcome page with navigation.  
 - **About (`about.html`)** → A short intro about me and the purpose of the project.  
 - **Seasonal Recipes**  
-  - `fall.html` → Cozy fall dishes (pumpkin soup, apple pie, etc.)  
-  - `winter.html` → Comfort food for cold days (hot chocolate, casseroles, etc.)  
-  - `spring.html` → Fresh, zesty recipes (salads, lemon cake, risotto).  
-  - `summer.html` → Cool and grill-ready favorites (smoothies, veggie skewers).
+  - `fall-recipes.html` → Cozy fall dishes (pumpkin soup, apple pie, etc.)  
+  - `winter-recipes.html` → Comfort food for cold days (hot chocolate, casseroles, etc.)  
+  - `spring-recipes.html` → Fresh, zesty recipes (salads, lemon cake, risotto).  
+  - `summer-recipes.html` → Cool and grill-ready favorites (smoothies, veggie skewers).
 
 Each seasonal page displays recipes in styled `<div>` cards, making it feel like a cookbook.  
 
