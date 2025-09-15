@@ -29,7 +29,7 @@ p {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
   padding: 0;
   text-align: center;
   margin-top: 20px;
@@ -39,6 +39,33 @@ ul li {
   margin: 10px 0;
 }
 
-a:hover {
-  color: antiquewhite;
+ul li{
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #AFABB8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.recipe-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.06);
+}
+
+.recipe-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 14px rgba(0,0,0,.08);
+}
+.recipe-card h3 { margin: 6px 0 8px; color: #2c3e50; }
+.recipe-card p { margin: 0 0 8px; color: #555; }
+.recipe-meta { font-size: 0.9rem; color: #777; }
