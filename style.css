@@ -69,3 +69,27 @@ ul li{
 .recipe-card h3 { margin: 6px 0 8px; color: #2c3e50; }
 .recipe-card p { margin: 0 0 8px; color: #555; }
 .recipe-meta { font-size: 0.9rem; color: #777; }
+
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+
+  h2 {
+    font-size: small;
+  }
+
+  p {
+    font-size: smaller;
+  }
+
+  ul li{
+    display: block;
+    margin: 8px auto;
+    width: 100%
+  }
+}
