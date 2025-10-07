@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  background-color: #ddd5e6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #3b244f;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #804bab;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 0 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #afabb8;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.recipe-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.recipe-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.08);
+}
+.recipe-card h3 {
+  margin: 6px 0 8px;
+  color: #2c3e50;
+}
+.recipe-card p {
+  margin: 0 0 8px;
+  color: #555;
+}
+.recipe-meta {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+
+  h2 {
+    font-size: small;
+  }
+
+  p {
+    font-size: smaller;
+  }
+
+  ul li {
+    display: block;
+    margin: 8px auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+
+  h2 {
+    font-size: small;
+  }
+
+  p {
+    font-size: smaller;
+  }
+
+  ul li {
+    display: block;
+    margin: 8px auto;
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    body {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: medium;
+    }
+
+    h2 {
+      font-size: small;
+    }
+
+    p {
+      font-size: smaller;
+    }
+
+    ul li {
+      display: block;
+      margin: 8px auto;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div style="text-align: center; padding: 50px">
+  <h1>🤔 Oops! Page Not Found</h1>
+  <% if (season) { %>
+  <p>Sorry, we don't have recipes for "<%= season %>" season yet!</p>
+  <p><em>Sad Simlish noises</em> 😢</p>
+  <p>Try one of these seasons instead:</p>
+  <ul style="list-style: none; padding: 0">
+    <li><a href="/recipes/fall">🍁 Fall Recipes</a></li>
+    <li><a href="/recipes/winter">❄️ Winter Recipes</a></li>
+    <li><a href="/recipes/spring">🌷 Spring Recipes</a></li>
+    <li><a href="/recipes/summer">🍉 Summer Recipes</a></li>
+  </ul>
+  <% } else { %>
+  <p>The page you're looking for doesn't exist!</p>
+  <p><em>Sul sul! This is not the page you're looking for...</em> 🤷‍♀️</p>
+  <p>
+    <a href="/">🏠 Go back home</a> |
+    <a href="/seasonal-recipes">🍽️ Browse recipes</a>
+  </p>
+  <% } %>
+
+  <div style="margin-top: 30px; font-style: italic; color: #666">
+    <p>Simlish translation: "Nooboo! Wrong page!" 🎮</p>
+    <p>
+      <small
+        >Maybe try:
+        <code>stats.set_skill_level major_navigation 10</code></small
+      >
+    </p>
+  </div>
+</div>

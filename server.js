@@ -35,7 +35,7 @@ app.get("/recipes/:season", (req, res) => {
   const season = req.params.season.toLowerCase();
 
   if (!recipes[season]) {
-    return res.status(404).render("404", {
+    return res.status(404).render("error", {
       title: "Season Not Found",
       season: season,
     });
@@ -54,19 +54,11 @@ app.get("/recipes/:season", (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).render("404", {
+  res.status(404).render("error", {
     title: "Page Not Found",
     season: null,
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`🍳 Wisk 'n Wish server running on http://localhost:${PORT}`);
-  console.log(`   📍 http://localhost:${PORT}/`);
-  console.log(`   📍 http://localhost:${PORT}/about`);
-  console.log(`   📍 http://localhost:${PORT}/seasonal-recipes`);
-  console.log(`   📍 http://localhost:${PORT}/recipes/fall`);
-  console.log(`   📍 http://localhost:${PORT}/recipes/winter`);
-  console.log(`   📍 http://localhost:${PORT}/recipes/spring`);
-  console.log(`   📍 http://localhost:${PORT}/recipes/summer`);
 });
