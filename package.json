@@ -8,5 +8,18 @@
         "dev": "nodemon serve.js"
     },
     "dependencies": {
+        "express": "^4.21.2",
+        "ejs": "^3.1.10"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    },
+    "keywords": [
+    "recipe",
+    "website",
+    "s4",
+    "s4sims"
+    ],
+   "author": "Cristina"
 
-        
+}
