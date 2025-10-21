@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1><%= pageTitle %></h1>
+    </header>
+
+    <main class="container">
+      <form
+        action="<%= recipe ? `/recipes/${season}/${recipe._id}` : `/recipes/${season}` %>"
+        method="POST"
+        class="recipe-form">
+        <div class="form-group">
+          <label for="name">Recipe Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value="<%= recipe ? recipe.name : '' %>"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4" required>
+<%= recipe ? recipe.description : '' %></textarea
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="meta"
+            >Prep time, cook time, and serves:</label
+          >
+          <input type="text" id="meta" name="meta" value="<%= recipe ? recipe.meta : '' %>" required />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-save">
+            <%= recipe ? 'Update Recipe' : 'Create Recipe' %>
+          </button>
+          <a href="/recipes/<%= season %>" class="btn-cancel">Cancel</a>
+        </div>
+      </form>
+    </main>
+
+    <footer class="container">
+      <nav>
+        <a href="/recipes/<%= season %>">Back to <%= season %> recipes</a> |
+        <a href="/">Home</a>
+      </nav>
+    </footer>
+  </body>
+</html>
