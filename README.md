@@ -28,3 +28,41 @@ Each seasonal page displays recipes in styled `<div>` cards, giving it a cookboo
 Add two more media query.
 
 Add dynamic routing and backend.
+
+## Technical Features
+
+### Frontend
+- Responsive design with 3 media queries (500px, 768px, 1024px)
+- Accessible HTML with semantic structure
+- Client-side JavaScript for dynamic search/filtering
+- Form validation with instant feedback
+
+### Backend
+- Express.js server with dynamic routing
+- EJS templating for server-side rendering
+- MongoDB database with Mongoose ODM
+- Full CRUD operations for recipes
+- RESTful API patterns
+
+---
+
+## Deployment
+
+### Environment Variables Required:
+- `MONGODB_URI`: MongoDB connection string (use MongoDB Atlas for production)
+- `PORT`: Server port (default: 3000)
+- `NODE_ENV`: Environment (production/development)
+
+### Security Measures Implemented:
+- Environment variables for sensitive data (MongoDB credentials)
+- MongoDB connection with authentication
+- HTTPS ready for production deployment
+
+### Running Locally:
+1. Clone the repository
+2. `npm install`
+3. Create `.env` file based on `.env.example`
+4. Add your MongoDB connection string to `.env`
+5. `npm run dev` (development) or `npm start` (production)
+6. Visit `http://localhost:3000`
+
