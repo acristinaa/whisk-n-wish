@@ -11,6 +11,19 @@
       <h1><%= pageTitle %></h1>
       <p><%= description %></p>
       <p>Check recipes for every season below! Yume Nume!!</p>
+      <div class="search-container" style="margin: 20px 0">
+        <input
+          type="text"
+          id="recipe-search"
+          placeholder="Search recipes..."
+          style="
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+          " />
+      </div>
       <a href="/recipes/<%= season %>/new" class="btn-add">+ Add New Recipe</a>
     </header>
 
@@ -55,5 +68,6 @@
         <a href="/">Home</a>
       </nav>
     </footer>
+    <script src="/client.js"></script>
   </body>
 </html>
